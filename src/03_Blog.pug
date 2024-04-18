@@ -1,0 +1,135 @@
+- var pageTitle = 'Главная страница'
+- var seoKeywords = 'Ключевые слова для страницы'
+- var seoDesc = 'Сео описание для страницы'
+
+include __const
+include __header
+include __footer
+include __form
+
+
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+  +head
+body
+  .site__header
+    +header
+  .site__center
+    .topTitle__area
+      .topTitle
+        h1 Заголовок страницы
+    .page__area
+      .page
+        .page__left
+          .leftMenu__area
+            .left__title
+              | Наши услуги
+            ul.leftMenu
+              li
+                a(href='#') Бухгалтерское обслуживание
+              li
+                a(href='#') Нулевая отчетность
+              li
+                a(href='#') Персонифицированный учет и 2-НДФЛ
+              li
+                a(href='#') Кадровое делопроизводство
+              li
+                a(href='#') Дополнительные услуги
+          .textForm__area
+            .left__title
+              | Обратная связь
+            +form1
+        .page__right
+          .breadcrumbs__area
+            .breadcrumbs
+              div
+                a(href='#') Главная 
+              |                         /
+              div
+                a(href='#') Категория 
+              |                         /
+              div
+                span Текущий пункт
+          .blog.row
+            .blog__item
+              .blog__itemTop
+                i.fa.fa-newspaper-o(aria-hidden='true')
+                span 05.06.17
+              .blog__itemTitle
+                | Запущен в эксплуатацию участок газораспределительной системы в поселке Новая Волга энгельсского
+                | района.
+              .blog__itemIntro
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolore dolorem ratione reiciendis vel veritatis! Beatae consequatur debitis dolore exercitationem expedita fuga fugiat illo inventore laboriosam, molestias nostrum odio officiis pariatur quasi quidem, quis quisquam quod sit soluta totam! Accusamus corporis esse nesciunt quae quod, reprehenderit soluta totam ullam voluptate.
+              a.blog__itemRedmore(href='#') Подробнее...
+            .blog__item
+              .blog__itemTop
+                i.fa.fa-newspaper-o(aria-hidden='true')
+                span 05.06.17
+              .blog__itemTitle
+                | Запущен в эксплуатацию участок газораспределительной системы в поселке Новая Волга энгельсского
+                | района.
+              .blog__itemIntro
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolore dolorem ratione reiciendis vel veritatis! Beatae consequatur debitis dolore exercitationem expedita fuga fugiat illo inventore laboriosam, molestias nostrum odio officiis pariatur quasi quidem, quis quisquam quod sit soluta totam! Accusamus corporis esse nesciunt quae quod, reprehenderit soluta totam ullam voluptate.
+              a.blog__itemRedmore(href='#') Подробнее...
+            .blog__item
+              .blog__itemTop
+                i.fa.fa-newspaper-o(aria-hidden='true')
+                span 05.06.17
+              .blog__itemTitle
+                | Запущен в эксплуатацию участок газораспределительной системы в поселке Новая Волга энгельсского
+                | района.
+              .blog__itemIntro
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolore dolorem ratione reiciendis vel veritatis! Beatae consequatur debitis dolore exercitationem expedita fuga fugiat illo inventore laboriosam, molestias nostrum odio officiis pariatur quasi quidem, quis quisquam quod sit soluta totam! Accusamus corporis esse nesciunt quae quod, reprehenderit soluta totam ullam voluptate.
+              a.blog__itemRedmore(href='#') Подробнее...
+            .blog__item
+              .blog__itemTop
+                i.fa.fa-newspaper-o(aria-hidden='true')
+                span 05.06.17
+              .blog__itemTitle
+                | Запущен в эксплуатацию участок газораспределительной системы в поселке Новая Волга энгельсского
+                | района.
+              .blog__itemIntro
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolore dolorem ratione reiciendis vel veritatis! Beatae consequatur debitis dolore exercitationem expedita fuga fugiat illo inventore laboriosam, molestias nostrum odio officiis pariatur quasi quidem, quis quisquam quod sit soluta totam! Accusamus corporis esse nesciunt quae quod, reprehenderit soluta totam ullam voluptate.
+              a.blog__itemRedmore(href='#') Подробнее...
+            .blog__item
+              .blog__itemTop
+                i.fa.fa-newspaper-o(aria-hidden='true')
+                span 05.06.17
+              .blog__itemTitle
+                | Запущен в эксплуатацию участок газораспределительной системы в поселке Новая Волга энгельсского
+                | района.
+              .blog__itemIntro
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolore dolorem ratione reiciendis vel veritatis! Beatae consequatur debitis dolore exercitationem expedita fuga fugiat illo inventore laboriosam, molestias nostrum odio officiis pariatur quasi quidem, quis quisquam quod sit soluta totam! Accusamus corporis esse nesciunt quae quod, reprehenderit soluta totam ullam voluptate.
+              a.blog__itemRedmore(href='#') Подробнее...
+          .pagin
+            ul.pagination
+              li.control
+                a(href='#') ◄
+              li
+                a(href='#') 1
+              li
+                a(href='#') 2
+              li.active
+                a(href='#') 3
+              li
+                a(href='#') 4
+              li
+                a(href='#') 5
+              li.control
+                a(href='#') ►
+
+
+
+
+  .site__footer
+    +footer
+  
+  +toTop
+  +popUpForm
+
+  +scripts
+
+
+
+    

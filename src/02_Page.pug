@@ -1,0 +1,192 @@
+- var pageTitle = 'Главная страница'
+- var seoKeywords = 'Ключевые слова для страницы'
+- var seoDesc = 'Сео описание для страницы'
+
+include __const
+include __header
+include __footer
+include __form
+include __pdfList
+
+
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+  +head
+body
+  .site__header
+    +header
+  .site__center
+    .topTitle__area
+      .topTitle
+        h1 Заголовок страницы
+    .page__area
+      .page
+        .page__left
+          .leftMenu__area
+            .left__title
+              | Наши услуги
+            ul.leftMenu
+              li
+                a(href='#') Бухгалтерское обслуживание
+              li
+                a(href='#') Нулевая отчетность
+              li
+                a(href='#') Персонифицированный учет и 2-НДФЛ
+              li
+                a(href='#') Кадровое делопроизводство
+              li
+                a(href='#') Дополнительные услуги
+          .lastNews__area
+            .left__title
+              | Последние новости
+            .news
+              .news__item2
+                .news__item2Top
+                  i.fa.fa-newspaper-o(aria-hidden='true')
+                  span 05.06.17
+                a(href='#')
+                  | Время сдавать декларацию
+              .news__item2
+                .news__item2Top
+                  i.fa.fa-newspaper-o(aria-hidden='true')
+                  span 05.06.17
+                a(href='#')
+                  | Изменения в отчетной документации по форме 3А
+              .news__item2
+                .news__item2Top
+                  i.fa.fa-newspaper-o(aria-hidden='true')
+                  span 05.06.17
+                a(href='#')
+                  | Заканчивается отчетный период
+              a.news2__redmore(href='#') Все новости...
+          .textForm__area
+            .left__title
+              | Обратная связь
+            +form1
+        .page__right
+          .breadcrumbs__area
+            .breadcrumbs
+              div
+                a(href='#') Главная 
+              |                         /
+              div
+                a(href='#') Категория 
+              |                         /
+              div
+                span Текущий пункт
+          .content
+            h2 Заголовок h2
+            h3 Заголовок h3
+            h4 Заголовок h4
+            h5 Заголовок h5
+            h6 Заголовок h6
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at eaque eos error et laborum minus
+              | natus necessitatibus veniam voluptatem?
+            p
+              | Lorem ipsum dolor sit amet, 
+              a(href='/') consectetur adipisicing elit
+              | . Dolorem dolores magni odio possimus, rem
+              |                         tempora!
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem eaque labore laboriosam libero
+              | minima nisi officiis recusandae tempora tenetur voluptatem? Accusamus, aliquid at culpa itaque
+              | labore libero nostrum quod repellendus.
+            ul
+              li Lorem ipsum dolor.
+              li Lorem ipsum.
+              li
+                | Lorem ipsum 
+                strong dolor
+                |  sit amet.
+              li
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, ipsa. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, ipsa. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, ipsa.
+              li Lorem.
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem dolores magni odio possimus, rem
+              | tempora!
+            ol
+              li Lorem ipsum dolor.
+              li Lorem ipsum.
+              li
+                | Lorem ipsum 
+                strong dolor
+                |  sit amet.
+              li
+                | Lorem ipsum 
+                strong dolor
+                |  sit amet, consectetur adipisicing elit. Corporis, ipsa.
+              li Lorem.
+            h3 Таблица с принудительной шириной width="100%"
+            table(width='100%')
+              tbody
+                tr
+                  td Строка 1 столбец 1
+                  td
+                    | Lorem ipsum 
+                    strong dolor
+                    |  sit amet.
+                  td
+                    ul
+                      li
+                        | Lorem ipsum 
+                        strong dolor
+                        |  sit amet.
+                      li Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, ipsa.
+                      li Lorem.
+                tr
+                  td Строка 2 столбец 1
+                  td
+                    | Строка 2 
+                    a(href='/') ссылка в таблице
+                  td Строка 2 столбец 3
+                tr
+                  td
+                    ol
+                      li Lorem ipsum dolor.
+                      li Lorem ipsum.
+                      li
+                        | Lorem ipsum 
+                        strong dolor
+                        |  sit amet.
+                      li Lorem.
+                  td Строка 3 столбец 2
+                  td Строка 3 столбец 3
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consequatur enim est, eveniet labore molestiae necessitatibus provident, quidem recusandae similique soluta voluptates. Architecto corporis cum dolor dolores eos, esse id iste labore minima nobis quae, quaerat quisquam sed ut voluptatum? Alias eaque eligendi hic in numquam perspiciatis possimus recusandae suscipit.
+            blockquote
+              | Текст цитаты Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur delectus deleniti dolor doloribus eaque molestiae placeat, possimus saepe! Aut corporis cupiditate delectus dolor eum laudantium magnam minus ullam voluptatibus. Architecto.
+            h3 Таблица с стилем .clear в свойствах
+            table.clear
+              tbody
+                tr
+                  td Строка 1 столбец 1
+                  td Строка 1 столбец 2
+                  td Строка 1 столбец 3
+                tr
+                  td Строка 2 столбец 1
+                  td Строка 2 столбец 2
+                  td Строка 2 столбец 3
+                tr
+                  td Строка 3 столбец 1
+                  td Строка 3 столбец 2
+                  td Строка 3 столбец 3
+          //- .zBtn.js__btn Оставить заявку
+
+          +pdfList
+          +gallery
+
+
+
+  .site__footer
+    +footer
+  
+  +toTop
+  +popUpForm
+
+  +scripts
+
+
+
+    

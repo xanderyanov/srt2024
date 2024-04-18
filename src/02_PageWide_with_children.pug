@@ -1,0 +1,104 @@
+- var pageTitle = 'Главная страница'
+- var seoKeywords = 'Ключевые слова для страницы'
+- var seoDesc = 'Сео описание для страницы'
+
+include __const
+include __header
+include __footer
+include __form
+
+
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+  +head
+body
+  .site__header
+    +header
+  .site__center
+    .topTitle__area
+      .topTitle
+        h1 Заголовок страницы
+    .page__area
+      .page_wide
+        .breadcrumbs__area
+          .breadcrumbs
+            div
+              a(href='#') Главная 
+            |                         /
+            div
+              a(href='#') Категория 
+            |                         /
+            div
+              span Текущий пункт
+        .content
+          h2 Заголовок h2
+          h3 Заголовок h3
+          h4 Заголовок h4
+          h5 Заголовок h5
+          h6 Заголовок h6
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at eaque eos error et laborum minus
+            | natus necessitatibus veniam voluptatem?
+          p
+            | Lorem ipsum dolor sit amet, 
+            a(href='/') consectetur adipisicing elit
+            | . Dolorem dolores magni odio possimus, rem
+            |                         tempora!
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem eaque labore laboriosam libero
+            | minima nisi officiis recusandae tempora tenetur voluptatem? Accusamus, aliquid at culpa itaque
+            | labore libero nostrum quod repellendus.
+          ul
+            li Lorem ipsum dolor.
+            li Lorem ipsum.
+            li
+              | Lorem ipsum 
+              strong dolor
+              |  sit amet.
+            li
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, ipsa. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, ipsa. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, ipsa.
+            li Lorem.
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem dolores magni odio possimus, rem
+            | tempora!
+
+        .chBlocks 
+          .chBlock 
+            .chBlock__img 
+              img(src="assets/img/about/emb.webp", alt="")   
+            .chBlock__info 
+              .chBlock__infoTitle Евгения Михайловна Бондаренко — юрист, кадровик
+              .chBlock__infoContent.content 
+                p Имею профильное образование, юридический опыт, а также опыт работы в кадровом деле на руководящей должности. 
+                p Знаю проблемы работников и работодателей изнутри.  
+                p Уверена, что по-настоящему качественные и полные юридические услуги способен предоставить тот специалист, который не ограничивается имеющейся квалификацией, 
+                p а постоянно продолжает свое профессиональное саморазвитие, ищет и находит новые решения для своих клиентов. 
+                p Именно этой деятельности я уделяю большую часть своего времени, и мне особенно приятно, что ее результаты ощущают на себе мои клиенты — юридические 
+                p и физические лица с самыми разными проблемами, вопросами и потребностями. Среди них я буду рада видеть и Вас! 
+          .chBlock 
+            .chBlock__img 
+              img(src="assets/img/about/vvb.webp", alt="")   
+            .chBlock__info 
+              .chBlock__infoTitle Виталий Владимирович Бондаренко — адвокат, юрист
+              .chBlock__infoContent.content 
+                p Имею профильное образование, юридический опыт, а также опыт работы в кадровом деле на руководящей должности. 
+                p Знаю проблемы работников и работодателей изнутри.  
+                p Уверена, что по-настоящему качественные и полные юридические услуги способен предоставить тот специалист, который не ограничивается имеющейся квалификацией, 
+                p а постоянно продолжает свое профессиональное саморазвитие, ищет и находит новые решения для своих клиентов. 
+                p Именно этой деятельности я уделяю большую часть своего времени, и мне особенно приятно, что ее результаты ощущают на себе мои клиенты — юридические 
+                p и физические лица с самыми разными проблемами, вопросами и потребностями. Среди них я буду рада видеть и Вас! 
+
+
+
+  .site__footer
+    +footer
+  
+  +toTop
+  +popUpForm
+
+  +scripts
+
+
+
+    
