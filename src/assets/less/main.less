@@ -527,6 +527,22 @@ ul.adaptiveMenu ul {
   width: 40%;
 }
 
+.f1 {
+  .at-max(768px, {
+    order: 1;
+    width: 50%;
+  });
+
+.at-max(480px, {
+  order: 2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+});
+
+}
+
 .f2 {
   width: 20%;
 }
@@ -572,12 +588,18 @@ ul.adaptiveMenu ul {
   flex-direction: column;
   align-items: flex-end;
 
-  .at-max(480px, {
-    justify-content: center;
-    order: 1;
-    width: 100%;
-    margin-bottom: 10px;
+  .at-max(768px, {
+    order: 2;
+    width: 50%;
   });
+
+.at-max(480px, {
+  justify-content: center;
+  order: 1;
+  width: 100%;
+  margin-bottom: 10px;
+  align-items: center;
+});
 }
 
 .telephon {
